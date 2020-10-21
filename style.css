@@ -1,0 +1,116 @@
+body {
+background-color:#AF8D86;
+color:rgb(100 100 100);
+font-size: 17px;
+font-family: lora,serif;
+}
+
+h1{
+	color: #432E36;
+	font-family: helvetica,serif;
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 10px;
+
+}
+h2, h3{
+	color: #EDBFC6;
+	font-family: helvetica,serif;
+	font-size: 40px;
+	letter-spacing: 8px;
+	font-weight: 400
+	line-height: 1.6;
+}
+
+a{
+	text-decoration: none;
+	font-family: helvetica,serif;
+	color: rgb(4 139 154);
+}
+a:hover {
+	color: rgb(230 230 230);
+}
+
+p{ text-justify: center;
+}
+
+div{
+    margin: 5px auto;
+    background: #F9DEC9;
+    padding: 50px;
+    margin: 50px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+
+/*Custome and Design with class*/
+
+.container{
+	width: 700px;
+	margin: 40px auto;
+	text-align: center;
+}
+@media (max-width: 760px){
+	.container{
+		width: 600px;
+	}
+}
+
+@media (max-width: 500px){
+	.container{
+		width: 400px;
+	}
+}
+
+
+
+
+
+.card-margin{
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+	border-radius:4px;
+	margin: 20px 0px;
+}
+
+.img-circle{
+	border-radius: 50%
+}
+
+.btn-blue{
+	background-color: rgb(4 139 154);
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+
+}
+.btn-blue:hover{
+	background-color: black;
+	color: white;
+}
+.list-inline{
+	list-style: none;
+	padding-left: 0px;
+}
+.list-inline li{
+	display: inline;
+	padding: 10px;
+}
+.list-inline i {
+	font-size: 50px;
+}
+#introduction p {
+	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
