@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 	<head>
 		<title>Romane Dubrunfaut's profile</title>
 		<meta name="descritption" content="This is the profile of Romane">
@@ -9,31 +8,39 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+   		<title>DarkTheme</title>
 	</head>
-	<body>
+
+
+<body>
+	
 
 		<div class="container">
 			<div class="card-white" id="introduction">
 				<h1> ROMANE </h1>
-				<img src="images/MOI.jpg" class="img-circle" alt="Romane DUBRUNFAUT" width="200px">
+					<div class="changetheme">Switch the Theme</div>
+					<script>
+ 					const switchThemeBtn = document.querySelector('.changetheme')
+    				let toggleTheme = 0;
+   					switchThemeBtn.addEventListener('click', () => {
+        			if(toggleTheme === 0) {
+           			document.documentElement.style.setProperty('--ecriture', '#EDBFC6');
+           			document.documentElement.style.setProperty('--background', '#262626');
+            		toggleTheme++;
+        			} else {
+            		document.documentElement.style.setProperty('--ecriture', '#262626');
+            		document.documentElement.style.setProperty('--background', '#EDBFC6');
+           			toggleTheme--;}})
+           			</script>
+				<br><img src="images/MOI.jpg" class="img-circle" alt="Romane DUBRUNFAUT" width="200px"></br>
 				<p> 
 					I am currently in my first year of <b>master in Ieseg Paris</b>, I am keen on Digital marketing. I love traveling around 	the world. 🌍
-				</p>
-				<p>
-					I lived in : 
-					</p><ul>
-					<li>France 🇫🇷</li>
-					<li>Belgium 🇧🇪</li>
-					<li>United Kingdom 🇬🇧</li>
-					</ul>
+					<br>I lived in : </br>France 🇫🇷<br>Belgium 🇧🇪</br>United Kingdom 🇬🇧
 				</p>
 				<a href="https://www.ieseg.fr" target="_blank" class="btn-blue">Discover my school</a>
-			</div>
-			<div class="card-white">
-				<h2>MAKEUP</h2>
-				<p>
-					I am passionated about <b>makeup</b>.
-				</p>	
 			</div>
 			<div class="card-white">
 				<h2>MARKETING</h2>
@@ -62,14 +69,7 @@
 						</a>
 					</li>
 				</ul>
-			</div>
 		</div>
 		
-
-
-
-
-
-
 </body>
 </html>
